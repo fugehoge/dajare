@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>投稿閲覧ページ</title>
+</head>
+<body>
+    <h1>投稿されたダジャレ</h1>
+    <div th:each="dajare : ${dajares}">
+        <p th:text="${dajare.content}"></p>
+        <p><small>作者: <span th:text="${dajare.author}"></span></small></p>
+    </div>
+     <a href="/">トップページへ</a>
+</body>
+</html>

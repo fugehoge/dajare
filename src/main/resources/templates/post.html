@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>投稿ページ</title>
+</head>
+<body>
+    <h1>新しいダジャレを投稿</h1>
+    <form action="/complete" method="post">
+        <textarea name="dajare" required></textarea>
+        <input type="text" name="author" placeholder="作者名" required>
+        <button type="submit">投稿</button>
+    </form>
+    
+     <a href="/">トップページへ</a>
+</body>
+</html>
